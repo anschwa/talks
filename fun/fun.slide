@@ -1,0 +1,66 @@
+Don't Forget To Have Fun
+IndyPy, 10 July 2018
+
+Adam Schwartz
+Software Engineer, Diagnotes
+adam@anschwa.com
+
+* A bit about me
+.image img/xtern.png _ 400
+.caption 2017 TechPoint Xtern Program @ HealthX
+
+.image img/earlham.jpg
+.caption Recently graduated from Earlham College, Richmond IN
+
+* My propositions
+- Having fun is important
+- Having fun at work is important
+- Sometimes work isn't fun
+- Sometimes what was fun yesterday isn't fun today
+- Investing in fun is an investment in productivity
+
+* My guiding questions
+- What do I think is fun?
+- Can I do one of those things at work?
+- Can I do one of those things after work?
+
+* My list of fun (for this talk)
+- Being outside
+- Systems / Tooling
+- Programming Languages
+- Ceramics
+
+* Being outside
+.image img/slackline.jpg _ 500
+.caption Bike and Slackline @ Broad Ripple Park
+
+* Systems / Tooling
+
+* 
+.play -edit src/app.py
+[[https://godoc.org/golang.org/x/tools/cmd/present]]
+
+* My tricks
+- Dvorak keyboard layout
+- [[https://fishshell.com/][Fish]] shell
+- `e` a function that wraps `cd`, `ls`, and `$EDITOR` all into one!
+- `ee` does the same, but uses my text editor rather than the shell
+- [[https://orgmode.org/][Org mode]] unleash the power of plaintext
+
+* 
+.video img/shell.mp4 video/mp4 _ 460
+.caption short demo of my shell
+
+* Programming Languages
+
+* Learning Go
+.play -numbers src/request.go
+.caption HTTP request in Go (error handling omitted)
+
+* Ceramics
+.image img/wheel.jpg 500 _
+.caption back at it @ Indianapolis Art Center
+
+* 
+.image img/mug.jpg 550 _
+.caption When a CS student takes a ceramics class
