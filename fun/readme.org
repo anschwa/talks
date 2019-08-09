@@ -13,5 +13,5 @@ performance at work.
 #+BEGIN_SRC text
 $ go get golang.org/x/tools/cmd/present
 $ present
-> Open your web browser and visit http://127.0.0.1:399
+> Open your web browser and visit http://127.0.0.1:3999
 #+END_SRC

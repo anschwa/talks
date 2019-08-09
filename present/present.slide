@@ -1,0 +1,90 @@
+Present Lightning Talk
+Golang Indianapolis Agust 21, 2019
+
+Adam Schwartz
+Software Engineer, Diagnotes
+adam@anschwa.com
+https://github.com/anschwa/talks
+
+* About me
+.image img/companies.png _ 700
+.caption 2017 TechPoint Xtern Program @ HealthX | Software Engineer @ Diagnotes
+
+.image img/earlham.jpg _ 700
+.caption Graduated in May 2018 from Earlham College, Richmond IN
+
+* Getting started
+Install:
+.play src/install.sh
+
+Docs:
+.iframe https://godoc.org/golang.org/x/tools/present 300 900
+.link https://godoc.org/golang.org/x/tools/present
+
+* Slide example
+    * Slide title
+    Some text and some foos.
+    - a *couple*
+    - things to _consider_
+    - about `present`
+
+    ** a sub-section
+    Might not look how you would expect. It helps to think of your
+    presentation more like a document than a slide deck when using
+    sections.
+
+    *** top-level slide headings vs. sectioned document
+    So depending on what mental model you prefer, you should stick to one
+    or the other.
+
+* Slide title
+Some text and some foos.
+- a *couple*
+- things to _consider_
+- about `present`
+
+** a sub-section
+Might not look how you would expect. It helps to think of your
+presentation more like a document than a slide deck when using
+sections.
+
+*** top-level slide headings vs. sectioned document
+So depending on what mental model you prefer, you should stick to one
+or the other.
+
+* Code example
+.play -numbers src/request.go
+
+* Code example (source files)
+    * Code example
+    .play -numbers src/request.go
+.code -numbers src/request.go.txt
+
+* Code example (with snippets & highlighting)
+    * Code example (with snippets & highlighting)
+    .play -numbers src/request.go /^func/,/^}/ HLexample
+
+.play -numbers src/request.go /^func/,/^}/ HLexample
+
+* Another code example (continued)
+.play -numbers src/app.py
+
+* Another code example (continued)
+    * Another code example (continued)
+    .iframe http://localhost:8080 500 980
+.iframe http://localhost:8080 500 980
+
+* Interactive code example
+    .play -edit src/shell.sh
+: echo 'today is' `date`
+: find . -type f -name '*.go'
+.play -edit src/shell.sh
+
+* Summary
+.html src/table.html
+
+Tips:
+
+- Take advantage of the `.html` directive (tables, css, etc.)
+- Use Photoshop for more complex image layouts
+- Focus more on content than slide arrangement

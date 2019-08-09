@@ -36,7 +36,7 @@ adam@anschwa.com
 
 * Systems / Tooling
 
-* 
+*
 .play -edit src/app.py
 [[https://godoc.org/golang.org/x/tools/cmd/present]]
 
@@ -47,7 +47,7 @@ adam@anschwa.com
 - `ee` does the same, but uses my text editor rather than the shell
 - [[https://orgmode.org/][Org mode]] unleash the power of plaintext
 
-* 
+*
 .video img/shell.mp4 video/mp4 _ 460
 .caption short demo of my shell
 
@@ -61,6 +61,6 @@ adam@anschwa.com
 .image img/wheel.jpg 500 _
 .caption back at it @ Indianapolis Art Center
 
-* 
+*
 .image img/mug.jpg 550 _
 .caption When a CS student takes a ceramics class
