@@ -1,0 +1,4 @@
+A collection of talks I have given.
+
+1. [[file:fun/readme.org][Don’t Forget To Have Fun]]
+   - IndyPy July 10, 2018
