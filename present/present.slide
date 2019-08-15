@@ -18,15 +18,18 @@ Install:
 .play src/install.sh
 
 Docs:
-.iframe https://godoc.org/golang.org/x/tools/present 300 900
+.link https://godoc.org/golang.org/x/tools/present
+
+* Getting started (continued)
+.iframe https://godoc.org/golang.org/x/tools/present 450 900
 .link https://godoc.org/golang.org/x/tools/present
 
 * Slide example
     * Slide title
     Some text and some foos.
-    - a *couple*
-    - things to _consider_
-    - about `present`
+
+    - a *couple* things to
+    - _consider_ about `present`
 
     ** a sub-section
     Might not look how you would expect. It helps to think of your
@@ -39,9 +42,9 @@ Docs:
 
 * Slide title
 Some text and some foos.
-- a *couple*
-- things to _consider_
-- about `present`
+
+- a *couple* things to
+- _consider_ about `present`
 
 ** a sub-section
 Might not look how you would expect. It helps to think of your
@@ -87,4 +90,4 @@ Tips:
 
 - Take advantage of the `.html` directive (tables, css, etc.)
 - Use Photoshop for more complex image layouts
-- Focus more on content than slide arrangement
+- Know your audience. `present` is not a presentation holy-grail.
