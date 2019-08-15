@@ -1,8 +1,14 @@
 * Present Lightning Talk
-Golang Indianapolis Agust 21, 2019
+Golang Indianapolis August 21, 2019
 
 * Abstract
+=present= is a neat tool that offers some unique features for giving
+talks about code. This talk covers how to embed images, websites, and
+live source code into your presentation as well as address some of the
+trade-offs you have to make when choosing =present= over traditional
+slide-making software.
 
+A quick look at using the Go =present= tool to give talks.
 
 * Present
 #+BEGIN_SRC text
