@@ -1,0 +1,25 @@
+Using Modules Replace
+Golang Indianapolis _ _, 2019
+
+Adam Schwartz
+Software Engineer, Diagnotes
+adam@anschwa.com
+
+* The Trouble with Modules
+* How do I develop my Go applications locally?
+
+- Should I use `GOPATH`?
+- When do I set `GO111MODULE`?
+- How can I work off `master` but still version my app?
+- How do I switch between developing a feature and debugging a release?
+- How do I manage internal app dependencies?
+- What are the best practices?
+
+* Using Replace
+
+* Bonus: Mixing versioning and latest
+    go get path/to/package@master
+    go get -u ./...
+    go mod tidy
+
+.link https://github.com/golang/go/wiki/Modules

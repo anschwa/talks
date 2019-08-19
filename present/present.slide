@@ -14,13 +14,9 @@ https://github.com/anschwa/talks
 .caption Graduated in May 2018 from Earlham College, Richmond IN
 
 * Getting started
-Install:
-.play src/install.sh
 
-Docs:
-.link https://godoc.org/golang.org/x/tools/present
+    go get -v golang.org/x/tools/cmd/present
 
-* Getting started (continued)
 .iframe https://godoc.org/golang.org/x/tools/present 450 900
 .link https://godoc.org/golang.org/x/tools/present
 

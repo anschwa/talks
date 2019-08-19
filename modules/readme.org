@@ -1,0 +1,11 @@
+* Modules Lightning Talk
+Golang Indianapolis _ _, 2019
+
+* Abstract
+
+* Present
+#+BEGIN_SRC text
+$ go get golang.org/x/tools/cmd/present
+$ present -notes
+> Open your web browser and visit http://127.0.0.1:3999
+#+END_SRC
