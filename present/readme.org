@@ -8,8 +8,6 @@ live source code into your presentation as well as address some of the
 trade-offs you have to make when choosing =present= over traditional
 slide-making software.
 
-A quick look at using the Go =present= tool to give talks.
-
 * Present
 #+BEGIN_SRC text
 $ go get golang.org/x/tools/cmd/present
