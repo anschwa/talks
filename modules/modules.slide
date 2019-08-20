@@ -16,6 +16,22 @@ adam@anschwa.com
 - What are the best practices?
 
 * Using Replace
+* Scenario
+You have two services: `authorizer` and `website`, both are using `modules`.
+
+In production you have `website@v1.13.0`, which imports
+`authorizer@v1.2.0`.
+
+Locally, you are developing a feature for `authorizer` and want to
+test it out on `website`. How do you do it?
+
+* The Replace Directive
+   $ cd /path/to/website
+   $ cat go.mod
+
+.code src/go.mod
+
+* go mod edit
 
 * Bonus: Mixing versioning and latest
     go get path/to/package@master
@@ -23,3 +39,9 @@ adam@anschwa.com
     go mod tidy
 
 .link https://github.com/golang/go/wiki/Modules
+
+
+$ curl -i localhost:8080/user/42
+> 200
+$ curl -i localhost:8080/user/hello
+> 404
