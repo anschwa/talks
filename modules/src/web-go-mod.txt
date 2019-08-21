@@ -1,0 +1,10 @@
+module example.com/services/website
+
+go 1.12
+
+require (
+	example.com/services/authorizer v1.2.0
+	github.com/gin-gonic/gin v1.4.0
+)
+
+replace example.com/services/authorizer => /path/to/local/copy/of/authorizer
