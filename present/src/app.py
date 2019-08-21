@@ -2,9 +2,9 @@
 import bottle
 
 
-@bottle.route('/')
+@bottle.route("/")
 def hello():
     return "<h1>What is six times nine?</h1>"
 
 
-bottle.run(host='localhost', port=8080, debug=True)
+bottle.run(host="localhost", port=8080, debug=True)
