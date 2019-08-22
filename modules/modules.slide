@@ -47,9 +47,9 @@ Grab latest commit regardless of tagged versions:
 
   $ go get example.com/services/authorizer@develop
 
-Ignore a dependency completely (always use latest commit on `master`):
+Prevent a specific version of a dependency from getting used:
 
-  $ go mod edit -exclude=example.com/services/authorizer
+  $ go mod edit -exclude=example.com/services/authorizer@v1.1.0
 
 Update all dependencies:
 
