@@ -1,5 +1,5 @@
 Using Modules Replace
-Golang Indianapolis _ _, 2019
+Golang Indianapolis October  23, 2019
 
 Adam Schwartz
 Software Engineer, Diagnotes
@@ -13,22 +13,22 @@ https://github.com/anschwa/talks
 - When do I set `GO111MODULE`?
 - How can I work off `master` but still version my app?
 - How do I switch between developing a feature and debugging a release?
-- How do I manage internal app dependencies?
+- How do I manage internal application dependencies?
 - What are the best practices?
 
 * Using Replace
 * Scenario
-You have two services: `authorizer` and `website`, both are using `modules`.
+We have two services: `authorizer` and `website`, both are using modules.
 
-In production you have `website@v1.13.0`, which imports
+In production we have `website@v1.13.0`, which imports
 `authorizer@v1.2.0`.
 
-Locally, you are developing a feature for `authorizer` and want to
-test it out on `website`. How do you do it?
+Locally, we are developing a feature for `authorizer` and want to
+test it out on `website`. How do we do it?
 
 * The Replace Directive
-`replace` allows us to substitute a given dependency for a different
-version, fork, or location of the package.
+`replace` allows us to substitute a given package for a different
+version, fork, or location.
 
   $ cd /path/to/website
   $ go mod edit -replace=example.com/services/authorizer=/path/to/local/copy/of/authorizer
@@ -47,7 +47,8 @@ Grab latest commit regardless of tagged versions:
 
   $ go get example.com/services/authorizer@develop
 
-Prevent a specific version of a dependency from getting used:
+Prevent a specific version of a dependency from getting used, in some
+cases this will force the latest commit to be used instead.
 
   $ go mod edit -exclude=example.com/services/authorizer@v1.1.0
 
@@ -55,3 +56,20 @@ Update all dependencies:
 
   $ go get -u ./...
   $ go mod tidy
+
+* Gohack
+
+.link https://github.com/rogpeppe/gohack
+
+Gohack is a tool built around modules `replace` that makes it
+eaiser to debug dependancies in your app. It doesn't give you as much
+flexibility, but it might be useful to have around.
+
+Example:
+
+    $ go get github.com/rogpeppe/gohack
+
+    $ gohack get example.com/foo/bar
+    $ gohack undo
+
+* Demo

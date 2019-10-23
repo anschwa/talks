@@ -3,7 +3,7 @@ Golang Indianapolis _ _, 2019
 
 * Abstract
 Go modules give some flexibility for controlling which version of a
-dependency get built in your app, however, these mechanisms are not
+dependency gets built in your app, however, these mechanisms are not
 obvious. This talk sets out to demonstrate some of the abilities of
 =replace=, =exclude=, and =go get= under modules for substituting
 package versions or branches on the fly.
