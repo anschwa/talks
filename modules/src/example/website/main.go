@@ -19,7 +19,7 @@ func main() {
 	r.GET("/user/:name", func(c *gin.Context) {
 		u := authorizer.User{ID: rand.Intn(100), Name: c.Param("name")}
 		if !auth.Authorize(u) {
-			c.JSON(http.StatusUnauthorized, gin.H{"user": u, "status": "unauthorized"})
+			c.AbortWithStatus(http.StatusUnauthorized)
 			return
 		}
 
