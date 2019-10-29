@@ -1,5 +1,5 @@
 * Modules Lightning Talk
-Golang Indianapolis _ _, 2019
+Golang Indianapolis October 23, 2019
 
 * Abstract
 Go modules give some flexibility for controlling which version of a

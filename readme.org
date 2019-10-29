@@ -4,5 +4,5 @@ A collection of talks I have given.
    - IndyPy July 10, 2018
 2. [[file:present/readme.org][Present Lightning Talk]]
    - Golang Indianapolis August 21, 2019
-3. Using Modules Replace
+3. [[file:modules/readme.org][Using Modules Replace]]
    - Golang Indianapolis October 23, 2019
