@@ -46,7 +46,7 @@
   - If you're really serious, learn Dvorak.
 
   - My Keyboard
-  [[file:src/IMG_1438.jpg][ergodox]]
+  [[file:src/IMG_1438.jpg]]
 
 * What makes Emacs different?
   - Extensibility
