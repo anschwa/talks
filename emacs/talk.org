@@ -6,8 +6,10 @@
 
 * What is an EMACS?
   Emacs is family of text editors. Although this distinction has become
-  less relevant over time, it remains significant. Emacs is recognized
-  by its *extensibility* rather than its underlying implementation.
+  less relevant over time, it remains significant.
+
+  Emacs is recognized by its *extensibility* rather than its
+  underlying implementation.
 
 * Some history
   - First version appeared in 1976. (Guy Steele et al.)
@@ -16,57 +18,79 @@
     (Richard Stallman / James Gosling)
   - Ken Thompson developed ed around 1970.
 
-* Let's talk about line editing
-** Fluency
-   - We work with text one line at a time
-   - So let's Make it as natural to manipulate as possible
-   - Line editing helps eliminate the friction between getting our
-     thoughts to the screen by leveraging muscle memory
-   - Transforming text as we type means we are iterating on our ideas in real-time
-     - Provokes us to think deeper about the problem at hand
-     - Inspires new ideas
-** Efficiency
-   - Keybindings
-     - Navigation
-     - Copy & Paste
-     - Upcase / Downcase
-     - Undo
-     - Macros
+* Text editing as a tool for thought
+  - Text is the universal interface
+  - APL, Kenneth E. Iverson
 
-** Aside
-   - Learn to type!
-   - If you're really serious, learn Dvorak.
+* Let's talk about line editing
+
+* Fluency
+  - We work with text one line at a time
+  - So let's make it as natural to manipulate as possible
+  - Line editing helps eliminate the friction involved with getting
+    our thoughts to the screen by leveraging muscle memory
+  - Transforming text as we type means we are iterating on our ideas in real-time
+    - Provokes us to think deeper about the problem at hand
+    - Inspires new ideas
+
+* Efficiency
+  - Keybindings (GNU Readline)
+    - Navigation
+    - Copy & Paste
+    - Upcase / Downcase
+    - Undo
+    - Macros
+
+* Aside
+  - Learn to type!
+  - If you're really serious, learn Dvorak.
+
+  - My Keyboard
+  [[file:src/IMG_1438.jpg][ergodox]]
 
 * What makes Emacs different?
   - Extensibility
-  - Efficiency, consistency, and transparency (no surprises)
-  - Kill ring (infinite undo/redo)
-  - Marking (selection and navigation)
-  - Buffers and frames
+  - Efficiency, consistency, and transparency
+  - Kill ring (infinite clipboard for undo/redo)
+  - Marking (ergonomic selection and navigation)
+  - Buffers and frames (no distractions)
 
-** Killer Features
-   - Org-Mode (the best note taking system in the world)
-   - Magit (the best git interface in the world)
-   - Tramp (how remote file editing should be)
+* What does this get you?
+  - Emacs understands the semantic meaning of the text in your buffer
+  - Emacs has every feature you can imagine, but will never surprise
+    or distract you with them
+  - Emacs is useful beyond programming
 
-* Text editing as a tool for thought
-  - Text is the universal interface
+* Killer Features
+  - Org-Mode (the best note taking system in the world)
+  - Magit (the best git interface in the world)
+  - Tramp (how remote file editing should be)
 
-* Questions for consideration
+* Closing thoughts
   - Where do our tools impose limitations on us?
   - What limitations do we actually want?
   - What are the constraints of your environment?
   - How are you investing in your tools?
-  - Are you aware of the trade-offs you are making?
+  - Are you aware of the trade-offs you're making?
 
 * Thank You
   - Adam Schwartz
   - adam@anschwa.com
   - [[https://github.com/anschwa/talks]]
 
+* Questions?
+
 * MISC
   #+BEGIN_QUOTE
   Show me your flowcharts and conceal your tables, and I shall continue
   to be mystified. Show me your tables, and I won’t usually need your
   flowcharts; they’ll be obvious. -- Fred Brooks
+  #+END_QUOTE
+
+
+  #+BEGIN_QUOTE
+  The utility of a language as a tool of thought increases with the
+  range of topics it can treat, but decreases with the amount of
+  vocabulary and the complexity of grammatical rules which the user must
+  keep in mind. Economy of notation is therefore important. -- Kenneth E. Iverson
   #+END_QUOTE
