@@ -21,8 +21,14 @@
 * Text editing as a tool for thought
   - Text is the universal interface
   - APL, Kenneth E. Iverson
+    #+BEGIN_SRC text
+      life←{                                ⍝ John Conway's "Game of Life".
+        ↑1 ⍵∨.∧3 4=+/,¯1 0 1∘.⊖¯1 0 1∘.⌽⊂⍵  ⍝ Expression for next generation.
+                                            ⍝ https://dfns.dyalog.com/c_life.htm
+      }
+    #+END_SRC
 
-* Let's talk about line editing
+ Let's talk about line editing
 
 * Fluency
   - We work with text one line at a time

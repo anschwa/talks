@@ -14,6 +14,8 @@
 
 * kill ring, mark and popping the mark, buffers and frames, universal-argument
 
-* /usr/local/go/src
+* dired
+  - /usr/local/go/src
+
 * docker-tramp
   - /docker:
