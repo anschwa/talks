@@ -6,3 +6,5 @@ A collection of talks I have given.
    - Golang Indianapolis August 21, 2019
 3. [[file:modules/readme.org][Using Modules Replace]]
    - Golang Indianapolis October 23, 2019
+4. [[file:emacs/readme.org][Emacs and the Joy of Text Editing]]
+  indy.rb January 8, 2020
