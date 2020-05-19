@@ -1,10 +1,14 @@
 A collection of talks I have given.
 
-1. [[file:fun/readme.org][Don’t Forget To Have Fun]]
+1. [[file:fun_06-10-2018/readme.org][Don’t Forget To Have Fun]]
    - IndyPy July 10, 2018
-2. [[file:present/readme.org][Present Lightning Talk]]
+2. [[file:present_07-21-2019/readme.org][Present Lightning Talk]]
    - Golang Indianapolis August 21, 2019
-3. [[file:modules/readme.org][Using Modules Replace]]
+3. [[file:modules_11-23-2019/readme.org][Using Modules Replace]]
    - Golang Indianapolis October 23, 2019
-4. [[file:emacs/readme.org][Emacs and the Joy of Text Editing]]
+4. [[file:emacs_01-08-2020/readme.org][Emacs and the Joy of Text Editing]]
    - indy.rb January 8, 2020
+5. [[https://github.com/anschwa/dotfiles/blob/master/.readme.org][Keep it Simple Dotfiles]]
+   - Dotfiles-Indy April 16, 2020
+6. [[file:emacs_05-23-2020/readme.org][Why Emacs?]]
+   - Dotfiles-Indy May 23, 2020
