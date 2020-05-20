@@ -1,80 +1,115 @@
 * Why Emacs?
-  Dotfiles-Indy May 23, 2020
+Dotfiles-Indy May 23, 2020
 
 * Abstract
-  What's the deal with Emacs? I thought Vim was better anyway? Why
-  should I switch from Visual Studio Code? Emacs is weird.
+What's the deal with Emacs? I thought Vim was better anyway? Why
+should I switch from Visual Studio Code? Emacs is weird.
 
-  Let's take a look at some demos to see what makes Emacs unique and
-  highlight how it has inspired the software we use everyday.
+Let's take a look at some demos to see what makes Emacs unique and
+highlight how it has inspired the software we use everyday.
 
-  Featuring:
-  - Buffers
-  - Marks
-  - Dired
-  - TRAMP
-  - Customize
-  - Cool stuff
+Featuring:
+1. Buffers
+2. Marks
+3. Dired
+4. TRAMP
+5. Describe / Customize
+6. Cool stuff
 
 * Talk
 ** Buffers
-   - Jump to recent files
-   - Stop worrying about tabs and projects
-   - Enjoy context-free and distraction-less editing
+- Jump to recent files
+- Stop worrying about tabs and projects
+- Enjoy context-free and distraction-less editing
+
+Examples:
+#+BEGIN_SRC text
+(setq tags-table-list
+      '("~/Desktop/repos/nginx"
+        "~/Desktop/repos/ruby"
+        "~/Desktop/repos/vue"))
+#+END_SRC
+
+- ruby
+  - request_spec.rb -> examine TODO
+  - requests.rb
+  - http.rb -> eww 9.2 OPTIONS
+
+- vue
+  - core/index.js -> isServerRendering
+
+- nginx
+  - ngx_http_upstream.c
+  - ngx_http_static_module.c
+
+- go
+  - /usr/local/go/src/net/http/server.go
 
 ** Marks
-   - Text selection with the keyboard
-   - Popping the mark
+- Text selection with the keyboard
+- Popping the mark
+- Universal argument (=C-u=)
 
 ** Dired
-   - Move files (dwim)
-   - Bulk rename (wdired)
-   - Subdirectories (=i=, =C-u k=)
+- Move files (dwim)
+- Bulk rename (wdired)
+- Subdirectories (=i=, =C-u k=)
 
-   #+BEGIN_SRC text
-     /tmp/foobar
-     ├── a
-     ├── b
-     ├── bar
-     ├── baz
-     ├── c
-     └── foo
-         ├── x
-         └── y
+#+BEGIN_SRC text
+/tmp/foobar
+├── a
+├── b
+├── bar
+├── baz
+├── c
+└── foo
+    ├── x
+    └── y
 
-     3 directories, 5 files
-   #+END_SRC
+3 directories, 5 files
+#+END_SRC
 
 ** TRAMP
+Example using =docker-tramp=
 
-** Customize
-   - =M-x describe-key RET M-;=
-   - =M-x describe-variable RET scroll-bar-mode=
-   - =M-x describe-function RET browse-url-at-point=
-   - =M-x list-faces-display=
+Setup:
+1. =M-x term RET /bin/bash=
+2. =C-c C-j= to send input back to Emacs rather than the shell.
+3. =docker run -it --rm -w /opt bash=
+4. ~docker ps --format="table {{.Names}}"~ get name of running container.
+5. Generate access.log file to copy back to host
+
+Demo:
+1. =C-x C-f /docker:$container_name:/opt= to enter container.
+
+** Describe / Customize
+- =M-x describe-key RET M-;=
+- =M-x describe-variable RET scroll-bar-mode=
+- =M-x describe-function RET browse-url-at-point=
+- =M-x list-faces-display=
 
 ** Shell-command-on-region (cool stuff)
-   Using =M-x shell-command-on-region= (=M-|=, =C-u M-|=)
+Using =M-x shell-command-on-region= (=M-|=, =C-u M-|=)
 
-   #+BEGIN_SRC sql
-     cat ~/bin/pagila
+#+BEGIN_SRC text
+cat ~/bin/pagila
 
-     select city from (
-       select distinct 1 + trunc(random() * 600)::integer as id
-       from generate_series(1, 600) nums
-     ) rand
-       join city on city_id = id limit 10
+select city from (
+  select distinct 1 + trunc(random() * 600)::integer as id
+  from generate_series(1, 600) nums
+) rand
+  join city on city_id = id limit 10
 
-     cities = [
-       "Klerksdorp",
-       "Balurghat",
-       "Bergamo",
-       "Mysore",
-       "Tonghae",
-       "Korolev",
-       "Lancaster",
-       "Kisumu",
-       "Pune",
-       "Uruapan",
-       ]
-   #+END_SRC
+cities = [
+  "Klerksdorp",
+  "Balurghat",
+  "Bergamo",
+  "Mysore",
+  "Tonghae",
+  "Korolev",
+  "Lancaster",
+  "Kisumu",
+  "Pune",
+  "Uruapan",
+  ]
+#+END_SRC
