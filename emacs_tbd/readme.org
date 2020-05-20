@@ -1,5 +1,5 @@
 * Why Emacs?
-Dotfiles-Indy May 23, 2020
+Dotfiles-Indy TBD
 
 * Abstract
 What's the deal with Emacs? I thought Vim was better anyway? Why

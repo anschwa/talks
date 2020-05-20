@@ -10,5 +10,5 @@ A collection of talks I have given.
    - indy.rb January 8, 2020
 5. [[https://github.com/anschwa/dotfiles/blob/master/.readme.org][Keep it Simple Dotfiles]]
    - Dotfiles-Indy April 16, 2020
-6. [[file:emacs_05-23-2020/readme.org][Why Emacs?]]
-   - Dotfiles-Indy May 23, 2020
+6. [[file:emacs_tbd/readme.org][Why Emacs?]]
+   - Dotfiles-Indy TBD
