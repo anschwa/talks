@@ -5,8 +5,8 @@ Dotfiles-Indy TBD
 What's the deal with Emacs? I thought Vim was better anyway? Why
 should I switch from Visual Studio Code? Emacs is weird.
 
-Let's take a look at some demos to see what makes Emacs unique and
-highlight how it has inspired the software we use everyday.
+Let's take a look at what makes Emacs unique and highlight how it has
+inspired the software we use everyday.
 
 Featuring:
 1. Buffers
