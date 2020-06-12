@@ -1,0 +1,13 @@
+* Using build tags in Go
+Golang Indianapolis June 16, 2020
+
+* Abstract
+When it comes to compiling your programs, Go has a few tricks up its
+sleeve. Build tags are a versatile tool that provide a means to
+conditionally compile files into your Go program. In this talk we will
+write a make-believe serverless function that uses build tags to
+substitute ~package main~ so that we can develop and debug our program
+locally, while being able to deploy a "pure" production binary.
+
+As a bonus, we will look at setting package variables using the
+~ldflags -X~ option (see ~go doc cmd/link~).
