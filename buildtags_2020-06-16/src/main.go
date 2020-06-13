@@ -11,5 +11,5 @@ import (
 
 func main() {
 	debug("hello from dev")
-	sdk.Start(handler.Handle)
+	handler.Handle() // Run handler locally
 }
