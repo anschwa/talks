@@ -76,7 +76,7 @@ Setup:
 1. =M-x term RET /bin/bash=
 2. =C-c C-j= to send input back to Emacs rather than the shell.
 3. =docker run -it --rm -w /opt bash=
-4. ~docker ps --format="table {{.Names}}"~ get name of running container.
+4. ~~docker ps --format="table {{.Names}}"~~ get name of running container.
 5. Generate access.log file to copy back to host
 
 Demo:
