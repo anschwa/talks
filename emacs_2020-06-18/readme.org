@@ -17,6 +17,11 @@ Featuring:
 6. Cool stuff
 * Talk
 
+** Marks
+- Text selection with the keyboard
+- Popping the mark
+- Universal argument (=C-u=)
+
 ** Buffers
 - Jump to recent files
 - Stop worrying about tabs and projects
@@ -44,10 +49,6 @@ Examples:
 
 - go
   - /usr/local/go/src/net/http/server.go
-** Marks
-- Text selection with the keyboard
-- Popping the mark
-- Universal argument (=C-u=)
 
 ** Dired
 - Move files (dwim)
@@ -118,6 +119,6 @@ cities = [
 - =wgrep-change-to-wgrep-mode= (=C-c C-p=)
 
 *** M-x compile
-- go run thing.go
-- python thing.py
-- docker run --rm -v (pwd):/opt/ -w /opt/ node thing.js
+- =go run thing.go=
+- =python thing.py=
+- =docker run --rm -v (pwd):/opt/ -w /opt/ node thing.js=
