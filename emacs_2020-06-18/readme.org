@@ -15,8 +15,8 @@ Featuring:
 4. TRAMP
 5. Describe / Customize
 6. Cool stuff
-
 * Talk
+
 ** Buffers
 - Jump to recent files
 - Stop worrying about tabs and projects
@@ -44,7 +44,6 @@ Examples:
 
 - go
   - /usr/local/go/src/net/http/server.go
-
 ** Marks
 - Text selection with the keyboard
 - Popping the mark
@@ -76,7 +75,7 @@ Setup:
 1. =M-x term RET /bin/bash=
 2. =C-c C-j= to send input back to Emacs rather than the shell.
 3. =docker run -it --rm -w /opt bash=
-4. ~~docker ps --format="table {{.Names}}"~~ get name of running container.
+4. ~docker ps --format="table {{.Names}}"~ get name of running container.
 5. Generate access.log file to copy back to host
 
 Demo:
@@ -88,7 +87,8 @@ Demo:
 - =M-x describe-function RET browse-url-at-point=
 - =M-x list-faces-display=
 
-** Shell-command-on-region (cool stuff)
+** Cool Stuff
+*** shell-command-on-region
 Using =M-x shell-command-on-region= (=M-|=, =C-u M-|=)
 
 #+BEGIN_SRC text
@@ -113,3 +113,11 @@ cities = [
   "Uruapan",
   ]
 #+END_SRC
+
+*** rgrep, wgrep
+- =wgrep-change-to-wgrep-mode= (=C-c C-p=)
+
+*** M-x compile
+- go run thing.go
+- python thing.py
+- docker run --rm -v (pwd):/opt/ -w /opt/ node thing.js
