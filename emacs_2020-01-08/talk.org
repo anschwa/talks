@@ -19,17 +19,17 @@
   - Ken Thompson developed ed around 1970.
 
 * Text editing as a tool for thought
-  - Text is the universal interface
-  - APL, Kenneth E. Iverson
+  - UNIX: Text is the universal interface
+  - APL: Economy of notation
+
+** /What the heck is APL?/
     #+BEGIN_SRC text
       life←{                                ⍝ John Conway's "Game of Life".
         ↑1 ⍵∨.∧3 4=+/,¯1 0 1∘.⊖¯1 0 1∘.⌽⊂⍵  ⍝ Expression for next generation.
-                                            ⍝ https://dfns.dyalog.com/c_life.htm
-      }
+      }                                     ⍝ https://dfns.dyalog.com/c_life.htm
     #+END_SRC
 
- Let's talk about line editing
-
+* Let's talk about line editing
 * Fluency
   - We work with text one line at a time
   - So let's make it as natural to manipulate as possible
